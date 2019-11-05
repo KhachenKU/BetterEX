@@ -1,0 +1,23 @@
+.tableproduct{
+    display: block;
+    width:70em;
+    text-align: center;
+}
+
+.category{
+    display: block;
+}
+
+.textspan{
+    padding: 0.5em 0.5em;
+    font-size: 25px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-end-start-radius: 2em;
+    background-color: rgb(79, 79, 255);
+    color  : white;
+}
+
+.product{
+    margin:2em 0 2em 0;
+}
