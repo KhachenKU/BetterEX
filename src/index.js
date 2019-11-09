@@ -24,7 +24,7 @@ ReactDOM.render(
     <Provider store={store}>
         <Router>
             <Switch>
-                <Route path="/" exact component={Homepage} />
+                <Route path={process.env.PUBLIC_URL + '/'} exact component={Homepage} />
                 <Route path="/edittheme" component={EditTheme} />
                 <Route path="/downloaduser" component={DownloadUser} />
                 <Route path="/generate" component={Generation} />
