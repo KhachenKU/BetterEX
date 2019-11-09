@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/BetterEX/static/css/main.e46f4cae.chunk.css",
-    "main.js": "/BetterEX/static/js/main.99f94c49.chunk.js",
-    "main.js.map": "/BetterEX/static/js/main.99f94c49.chunk.js.map",
+    "main.js": "/BetterEX/static/js/main.7778f052.chunk.js",
+    "main.js.map": "/BetterEX/static/js/main.7778f052.chunk.js.map",
     "runtime-main.js": "/BetterEX/static/js/runtime-main.bdc2272f.js",
     "runtime-main.js.map": "/BetterEX/static/js/runtime-main.bdc2272f.js.map",
     "static/css/2.0624914a.chunk.css": "/BetterEX/static/css/2.0624914a.chunk.css",
     "static/js/2.9bc1a175.chunk.js": "/BetterEX/static/js/2.9bc1a175.chunk.js",
     "static/js/2.9bc1a175.chunk.js.map": "/BetterEX/static/js/2.9bc1a175.chunk.js.map",
     "index.html": "/BetterEX/index.html",
-    "precache-manifest.4a8340f66d60f466ef748979fce8771b.js": "/BetterEX/precache-manifest.4a8340f66d60f466ef748979fce8771b.js",
+    "precache-manifest.7ecbcaeda0ee201d2114e4992be716ab.js": "/BetterEX/precache-manifest.7ecbcaeda0ee201d2114e4992be716ab.js",
     "service-worker.js": "/BetterEX/service-worker.js",
     "static/css/2.0624914a.chunk.css.map": "/BetterEX/static/css/2.0624914a.chunk.css.map",
     "static/css/main.e46f4cae.chunk.css.map": "/BetterEX/static/css/main.e46f4cae.chunk.css.map",
@@ -30,6 +30,6 @@
     "static/css/2.0624914a.chunk.css",
     "static/js/2.9bc1a175.chunk.js",
     "static/css/main.e46f4cae.chunk.css",
-    "static/js/main.99f94c49.chunk.js"
+    "static/js/main.7778f052.chunk.js"
   ]
 }

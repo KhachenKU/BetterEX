@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "87fc64d0a82a95d12bcad47b947ccea6",
+    "revision": "1d0355e4f1109c9b7c60f7f8a7e4253f",
     "url": "/BetterEX/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/BetterEX/static/css/2.0624914a.chunk.css"
   },
   {
-    "revision": "ad58abc239b2c63d5e00",
+    "revision": "49b7d94ebb1937135ec0",
     "url": "/BetterEX/static/css/main.e46f4cae.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/BetterEX/static/js/2.9bc1a175.chunk.js"
   },
   {
-    "revision": "ad58abc239b2c63d5e00",
-    "url": "/BetterEX/static/js/main.99f94c49.chunk.js"
+    "revision": "49b7d94ebb1937135ec0",
+    "url": "/BetterEX/static/js/main.7778f052.chunk.js"
   },
   {
     "revision": "4cd9322600729626493d",
