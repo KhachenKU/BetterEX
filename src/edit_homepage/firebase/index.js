@@ -27,7 +27,7 @@ var config = {
     measurementId: "G-M650H8YH3X"
 };
 
-firebase.initializeApp(config);
+// firebase.initializeApp(config);
 
 const storage = firebase.storage();
 const auth = firebase.auth();

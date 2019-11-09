@@ -1,0 +1,43 @@
+.DBox{
+    width: 900px;
+}
+.DProductForm{
+    display: flex;
+    justify-content: center;
+}
+.DFormBox{
+    margin-top:40px;
+    width:900px;
+}
+.DInput{
+    margin-left:18px;
+    width:600px; 
+    border-radius: 20px;
+    
+}
+.DTxt{
+    width: 115px;
+    text-align: right;
+}
+.DTR{
+    margin-top:20px;
+}
+.InputIm{
+    justify-content: center;
+    width: 300px;
+}
+.InputIm2{
+    justify-content: center;
+    width: 300px;
+}
+
+.ButtSub{
+    margin-top: 20px;
+    height: 60px;
+    width: 130px;
+    border-radius: 40px;
+  }
+.InS{
+    width: 600px;
+    margin-left: 10px;
+}

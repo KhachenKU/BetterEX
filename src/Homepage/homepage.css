@@ -1,0 +1,174 @@
+/* global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* section{
+    padding: 6rem 0;
+} */
+
+p{
+    line-height: 1.5;
+    font-size: 1.8rem;
+    font-weight: 300;
+    user-select: none;
+}
+
+a{
+    text-decoration: none;
+    user-select: none;
+}
+
+/* promotion */
+.promotion{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.promotion img{
+    text-align: center;
+    align-items: center;
+    /* height: 50%;
+    width: 50%; */
+}
+
+.carousel-item{
+    width: 100%;
+    height: 100vh;
+}
+
+/*recommended*/
+.recommended{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.recommended-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 95%;
+    justify-items: center;
+    align-items: center;
+    padding: 2.5em;
+    margin: auto 
+}
+
+.first{
+    order:1;
+}
+
+.first header{
+    font-size: 3rem;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+
+.first p{
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+
+.second{
+    order:2;
+}
+
+.img-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px ;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+}
+
+.img-group img{
+    width: 100%;
+    height: 16rem;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.4), 0 6px 23px 0 rgba(0, 0, 0, 0.19);
+}
+/* mission */
+.mission{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.mission-inside{
+    margin: auto;  
+    align-items: center;
+    justify-items: center;
+    justify-self: center;
+    width: 60%;
+}
+
+.mission header{
+    line-height: 0%;
+    font-size: 8rem;
+    font-weight: 100;
+    letter-spacing: 5px;
+    
+}
+
+.mission p{
+    margin-top: 5em;
+    justify-self: center;
+    align-items: center;
+}
+
+.mission img{
+    width: 100%;
+    height: 100%;
+}
+
+/* contact */
+.contact{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact-data{
+    margin: auto;
+    width: 60%;
+}
+
+.contact header{
+    line-height: 0%;
+    font-size: 8rem;
+    font-weight: 100;
+    margin-bottom: 8rem;
+    letter-spacing: 3px;
+}
+
+.contact-data-name{
+    letter-spacing: 5px;
+}
+
+.contact-data-tel{
+    letter-spacing: 3px;
+}

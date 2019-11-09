@@ -10,7 +10,7 @@ const allReducer = combineReducers({
     TXcolor : changeTXColorReducer,
     codeBGcolor : changeCodeColorReducer,
     userstate : changeUserState,
-    adminstate : changeAdminState
+    adminstate : changeAdminState,
 });
 
 export default allReducer

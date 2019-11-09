@@ -8,11 +8,13 @@ import allReducer from './reducer';
 import { Provider } from 'react-redux';
 import { Login, DownloadUser, ProfileUser } from './LRPD';
 import EditHomepage from './edit_homepage/App';
-import Homepage from './Homepage';
+import Homepage from './Homepage/';
 import { Product } from './Product/Product';
-import Test from './Animation/index.js'
-import Generation from './Generate/Generate';
+import Test from './Animation/swiper/index';
+import Generation from './Generate';
 
+
+import ProductEdit from './Product_Edit'; 
 const store = createStore(
     allReducer,
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
@@ -24,11 +26,14 @@ ReactDOM.render(
             <Switch>
                 <Route path="/" exact component={Homepage} />
                 <Route path="/edittheme" component={EditTheme} />
-                <Route path="/product" component={Product} />
+                <Route path="/downloaduser" component={DownloadUser} />
+                <Route path="/generate" component={Generation} />
                 <Route path="/profileUser" component={ProfileUser} />
+                <Route path="/product/:iaun" component={Product} />
                 <Route path="/login" component={Login} />
                 <Route path="/downloadUser" component={DownloadUser} />
                 <Route path="/edithomepage" component={EditHomepage} />
+                <Route path="/productedit" component={ProductEdit} />
             </Switch>
         </Router>
     </Provider>, document.getElementById('root'));

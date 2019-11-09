@@ -1,22 +1,19 @@
-import image1 from './background.png';
-import image2 from './background1.jpg';
-import image3 from './background2.jpg';
+
 
 const tileData = [
     {
-      img: image1,
+      img: 'https://icdn2.digitaltrends.com/image/digitaltrends/iphone11-review-1200x630-c-ar1.91.jpg',
       title: 'Background',
       author: 'author',
    },
    {
-       img: image2,
+       img: null,
        title: 'Parn',
        author: 'author'
    },
    {
-       img: image3,
+       img: null,
        title: 'Mork'
    }
 ]
-
 export default tileData;

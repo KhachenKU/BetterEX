@@ -3,6 +3,7 @@ import {Button} from 'reactstrap'
 import './Generate.css'
 import TableInfo from './TableInfo'
 import {db} from '../firebase'
+
 class Generate extends React.Component{
     constructor(props){
         super(props);

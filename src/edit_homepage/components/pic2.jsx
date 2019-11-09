@@ -166,9 +166,9 @@ class ImageUpload extends Component {
             <div >
                 <div style={{ padding: 30 }} >
                     <form id="promo3">
-                        <Button outline color="secondary" onClick={this.toggle.bind(this)} style={{ height: 160, width: 160 }}>
+                        <Button outline color="secondary" onClick={this.toggle.bind(this)} style={{ height: 160, width: 300 }}>
                             <center>
-                                <img src={this.state.url || Plus} alt="Uploaded images" style={{ height: 140, width: 140 }} />
+                                <img src={this.state.url || Plus} alt="Uploaded images" style={{ height: 140, width: 280 }} />
                             </center>
                         </Button>
                     </form>

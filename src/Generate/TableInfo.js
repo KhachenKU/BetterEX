@@ -8,20 +8,20 @@ class TableInfo extends React.Component{
             <table className='tableInfo'>
                 <tbody>
                 <tr>
-                    <td style = {{textAlign: 'right'}}>Tel:</td>    
-                    <td><input type="text" name="Tel" className="textbox" id = 'Tel'/><br /></td>
+                    <td style = {{textAlign: 'right'}}>Tel:  </td>    
+                    <td><input type="text" name="Tel" class="form-control" id = 'Tel'/><br /></td>
                 </tr>
                 <tr>
-                    <td style = {{textAlign: 'right'}}>Name:</td>
-                    <td><input type="text" name="Name" className="textbox" id = 'Name'/><br /></td>
+                    <td style = {{textAlign: 'right'}}>Name:  </td>
+                    <td><input type="text" name="Name" class="form-control" id = 'Name'/><br /></td>
                 </tr>
                 <tr>
-                    <td style = {{textAlign: 'right'}}>Brand:</td>
-                    <td><input type="text" name="Brand" className="textbox" id ='Brand'/><br /></td>
+                    <td style = {{textAlign: 'right'}}>Brand:  </td>
+                    <td><input type="text" name="Brand" class="form-control" id ='Brand'/><br /></td>
                 </tr>
                 <tr>
-                    <td style = {{textAlign: 'right'}}>Version:</td>
-                    <td><input type="text" name="Version" className="textbox" id = 'Version'/><br /></td>
+                    <td style = {{textAlign: 'right'}}>Version:<t/></td>
+                    <td><input type="text" name="Version" class="form-control" id = 'Version'/><br /></td>
                 </tr>
                 </tbody>
             </table>

@@ -1,9 +1,12 @@
-import React, { useReducer } from "react";
-import loginImg from "../../../LRPD/login.svg";
-import { auth } from '../../../edit_homepage/firebase';
-import { useDispatch } from 'react-redux';
-import { changeUserStateLogin, changeAdminStateLogin, changeUserStateLogout, changeAdminStateLogout } from '../../../actions';
+import React, { useReducer } from "react" ;
+import loginImg from "../../../LRPD/login.svg" ;
+import { auth } from '../../firebase/index' ;
+import { useDispatch } from 'react-redux' ;
+import {db} from '../../../../src/firebase';
+import { changeUserStateLogin, changeAdminStateLogin, changeUserStateLogout, changeAdminStateLogout } from '../../../actions' ;
 
+var admin_state = -1 ;
+var user_state = -1 ;
 
 var admin_state = null
 var user_state = null
@@ -16,19 +19,23 @@ export class Login extends React.Component {
       password: '',
       currentUser: null,
       message: '',
+      // dataEmailAdmin : ["asdf@hotmail.com", "hero@hotmail.com"],
+      // dataEmailUser : ["user1@hotmail.com"]
+      dataEmailAdmin : [],
+      dataEmailUser : []
     }
     // this.onConfirmClick = this.onConfirmClick.bind(this)
   }
 
-  // componentDidMount() {
-  //   auth.onAuthStateChanged(user => {
-  //     if (user) {
-  //       this.setState({
-  //         currentUser: user
-  //       })
-  //     }
-  //   })
-  // }
+  componentDidMount() {
+    auth.onAuthStateChanged(user => {
+      if (user) {
+        this.setState({
+          currentUser: user
+        })
+      }
+    })
+  }
 
 
   onChange = e => {
@@ -97,13 +104,22 @@ export class Login extends React.Component {
 
   render() {
     const { message, currentUser } = this.state
-    var dataEmailAdmin = ["asdf@hotmail.com", "hero@hotmail.com"];
-    var dataEmailUser = ["user1@hotmail.com", "as@hotmail.com"];
+    db.collection('Members').get().then(docs => {
+      docs.forEach(doc => {
+              if(doc.data().rank === 'admin'){
+                this.state.dataEmailAdmin.push(doc.data().email)
+              }
+              else if(doc.data().rank === 'user'){
+                this.state.dataEmailUser.push(doc.data().email)
+              }
+          }
+      )
+})
 
     if (currentUser) {
       console.log(currentUser)
-      admin_state = dataEmailAdmin.indexOf(currentUser.email)
-      user_state = dataEmailUser.indexOf(currentUser.email)
+      admin_state = this.state.dataEmailAdmin.indexOf(currentUser.email)
+      user_state = this.state.dataEmailUser.indexOf(currentUser.email)
 
       this.onConfirmClick()
       if (admin_state != -1 || this.props.ad) {

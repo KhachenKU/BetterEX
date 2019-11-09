@@ -1,0 +1,49 @@
+.Box{
+    width: 800px;
+}
+.ProductForm{
+    margin-left:10px;
+    display: flex;
+    justify-content: center;
+}
+.FormBox{
+    margin-top:40px;
+    width:800px;
+    margin-left:30px;
+}
+.Input{
+    margin-left:10px;
+    width:350px;
+    border-radius: 20px;
+}
+.Txt{
+    width: 115px;
+    text-align: right;
+}
+.TR{
+    margin-top:20px;
+}
+.InputIm{
+    justify-content: center;
+    width: 500px;
+}
+.InputIm2{
+    justify-content: center;
+    width: 500px;
+}
+.In{
+    width: 350px;
+    margin-left: 10px;
+}
+.Im{
+    height: 120px;
+    width: 180px;
+    margin-bottom: 20px;
+}
+.choose{
+    width: 200px;
+}
+.BoxIm{
+    width: 200px;
+}
+

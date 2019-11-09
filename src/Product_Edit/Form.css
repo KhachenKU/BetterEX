@@ -1,0 +1,38 @@
+.Selected_box {
+  display: flex;
+  justify-content: center;
+}
+.Selected {
+    width: 950px;
+}
+.Selected-GButton{
+  margin-left : 30px;
+  margin-top: 43px;
+  width: 162px;
+  height: 52px;
+  border-style: solid;    
+  border-radius: 26px;
+  border-width: 1px;
+}
+.Selected-Button {
+    width: 80px;
+    height: 50px;    
+    border-radius: 25px;
+    text-align: center;
+    border-width: 0px;
+}
+
+.Selected-Button2 {
+  width: 80px;
+  height: 50px;
+  border-radius: 25px;
+  text-align: center;
+  border-width: 0px;
+}
+
+.ButtSub{
+  margin: 20px;
+  height: 50px;
+  width: 110px;
+  border-radius: 25px;
+}

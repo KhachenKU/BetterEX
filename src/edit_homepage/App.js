@@ -21,7 +21,7 @@ function App() {
 
   return (
 
-    <div >
+    <div className='background-color'>
       <NavBar us={USERstate} ad={ADMINstate} logo="BetterExhibition" log={"log in"} bgcolor={BGcolor} txColor={TXcolor} />
       <EditMenu page="homepage" bgcolor={BGcolor}/>
 

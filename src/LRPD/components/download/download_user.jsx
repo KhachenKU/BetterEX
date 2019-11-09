@@ -115,24 +115,32 @@ export class DownloadUser extends React.Component {
 }
 
 
-const a = '/12 - Multiple Access.pdf' ;
+
 
 class BoxInstall extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-           url: ''
+        this.state = { url1: '', url2: ''
         }
+            
         this.download = this.download.bind(this)
     }
+
      
    
     download = () => {
-     var imgRef = storage.ref(a);
-        imgRef.getDownloadURL().then(url => {
-            // console.log(this.setState())
-            this.setState({url: url})
+     var imgRef = storage.ref('key/DYNALYZER.exe');
+        imgRef.getDownloadURL().then(url1 => {
+            
+            this.setState({url1: url1})
+            // console.log(this.state)
+        })
+
+        var imgRef2 = storage.ref('key/FAMAS.exe');
+        imgRef2.getDownloadURL().then(url2 => {
+            this.setState({url2: url2})
+            // console.log(this.state)
         })
     }
     render() {
@@ -146,14 +154,21 @@ class BoxInstall extends React.Component {
         //     // })
         // }
 
-
+        const url1 = this.state.url1 
+        const url2 = this.state.url2 
+        // console.log(url1)
+        // console.log(url2)
+        // console.log(this.state)
         return (
             <div>
                 <Button color="primary" onClick={this.download}   >Download</Button>
             <div>
                 <br/>
                 <br/>
-                <a href = {this.state.url}>  {this.state.url} </a>
+                { url2 != "" && <a href = {url2}> FAMAS.exe </a>}
+                <br/>
+                <br/>
+                { url1 != "" && <a href = {url1}> DYNALYZER.exe </a>}
                
             </div>
                 

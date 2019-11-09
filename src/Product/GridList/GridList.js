@@ -5,7 +5,7 @@ import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import IconButton from '@material-ui/core/IconButton';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
-import tileData from './tileData';
+//import tileData from './tileData';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -30,6 +30,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 
+
 /**
  * The example data is structured as follows:
  *
@@ -42,15 +43,28 @@ const useStyles = makeStyles(theme => ({
  *   },
  * ];
  */
-export default function SingleLineGridList() {
-  const classes = useStyles();
+  
+  
+  
 
+export default function SingleLineGridList(C) {
+  // console.log(Catagory.Version,Catagory.Val)
+  const classes = useStyles();
+  const tileData = []
+  const Val = C.Val;
+  console.log(C.Val)
+  for(var i in Val){
+    for(var j in Val[i]){
+      let zzzz = Val[i][j]
+      tileData.push({img: zzzz.PictureLink, title: zzzz.Name+" "+zzzz.Version,auth:'author'})
+    }
+  }
   return (
     <div className={classes.root}>
       <GridList className={classes.gridList} cols={2.5}>
         {tileData.map(tile => (
           <GridListTile key={tile.img}>
-            <img src={tile.img} alt={tile.title} />
+            <img src={tile.img} alt={tile.title} width='100%'/>
             <GridListTileBar
               title={tile.title}
               classes={{
