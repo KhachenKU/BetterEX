@@ -2,7 +2,7 @@
   "name": "software-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://khachenku.github.io/",
+  "homepage": "https://khachenku.github.io/BetterEX/",
   "dependencies": {
     "@material-ui/core": "^4.5.1",
     "@material-ui/icons": "^4.5.1",
