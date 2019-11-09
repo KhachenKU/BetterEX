@@ -92,9 +92,9 @@ export default class ProductForm extends Component {
         this.setState({Version:null,VersionVal:null,Version:[]})
       }
       var y = firebase.database().ref('Product/'+this.state.Catagory+'/'+this.state.Brand+'/'+newValue.label).on('value', (data)=>{
-        var BrandData = data.toJSON()
+        let BrandData = data.toJSON()
         console.log(BrandData)
-        if(BrandData !== null){
+        if(BrandData !== null && BrandData !== undefined){
           var z = Object.keys(BrandData)
           let zzz = []
           for(var i in z){
@@ -134,16 +134,16 @@ export default class ProductForm extends Component {
         let BrandData = data.toJSON()
         if(BrandData!== null &&BrandData!== undefined){
           console.log(BrandData)
-          //var z = Object.keys(BrandData)
+          var z = Object.keys(BrandData)
           let k =[]
           for(var i in z){
             k.push({label: z[i]})
           }
-          
+          this.setState({CataOptions:k,show2:false})
       }
       
       })
-      this.setState({CataOptions:k,show2:false})
+      
     }
   Submit() {
     if(this.state.Catagory === null){

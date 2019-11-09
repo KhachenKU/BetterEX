@@ -91,8 +91,9 @@ export default class ProductForm extends Component {
         image: null
       })
       firebase.database().ref('Product').on('value', (data)=>{
-        var BrandData = data.toJSON()
-        if(BrandData!== null && BrnadData!== undefined){var z = Object.keys(BrandData)
+        let BrandData = data.toJSON()
+        if(BrandData !== null && BrandData !== undefined){
+          var z = Object.keys(BrandData)
           //console.log(BrandData)
         for(var i in z){
           this.state.options.push({label: z[i]})
